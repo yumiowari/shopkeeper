@@ -27,7 +27,7 @@ class View:
 
         self.acc_psswd = tk.StringVar(value = '')
         self.acc_psswd.trace_add('write', self.verify_acc_psswd)
-        self.__acc_psswd_entry = tk.Entry(self.__set_acc, textvariable = self.acc_psswd)
+        self.__acc_psswd_entry = tk.Entry(self.__set_acc, textvariable = self.acc_psswd, show = '*')
         self.__acc_psswd_label = tk.Label(self.__set_acc, text = 'Senha')
 
         self.__confirm_btn = tk.Button(self.__set_acc, text = 'Confirmar', command = self.update_acc)
