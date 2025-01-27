@@ -78,12 +78,14 @@ class View:
              'Github: '
         text_by = tk.Text(top, wrap = 'word', height = 4, width = 28)
         text_by.insert('1.0', by)
+        # nota: insere o conteúdo da variável "by" no widget "text_by" na linha 1 e coluna 0 (ou seja, posição 1.0).
+
 
         # configura o link para o github
-        text_by.insert('end', 'github.com/yumiowari', 'link')
+        text_by.insert('end', 'yumiowari.github.io', 'link')
 
         text_by.tag_configure('link', foreground = 'blue', underline = True)
-        text_by.tag_bind('link', '<Button-1>', lambda e: self.open_link('https://github.com/yumiowari'))
+        text_by.tag_bind('link', '<Button-1>', lambda e: self.open_link('https://yumiowari.github.io'))
         
         text_by.configure(state = 'disabled') # desativa a edição
         #
