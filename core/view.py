@@ -14,7 +14,6 @@ class View:
         self.root.title('$hopkeeper')
         self.root.minsize(400, 300)
         self.root.resizable(False, False)
-        self.centrazile()
         #
 
         # menu

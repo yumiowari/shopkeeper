@@ -89,17 +89,17 @@ class View:
 
         if messagebox.askyesno(title = 'Confirmação', message = 'Deseja atualizar os dados de login no banco de dados?', icon = 'warning'):        
             if acc_name == '' and acc_psswd != '' and acc_psswd_twin != '':
-                messagebox.showerror('Falha', 'Um nome de usuário precisa ser informado.')
+                messagebox.showerror('Falha', 'O nome de usuário precisa ser informado.')
             elif acc_name != '' and acc_psswd == '' and acc_psswd_twin != '':
-                messagebox.showerror('Falha', 'Uma senha precisa ser informada.')
+                messagebox.showerror('Falha', 'A senha precisa ser informada.')
             elif acc_name != '' and acc_psswd != '' and acc_psswd_twin == '':
                 messagebox.showerror('Falha', 'A confirmação para a senha precisa ser informada.')
             elif acc_name != '' and acc_psswd == '' and acc_psswd_twin == '':
-                messagebox.showerror('Falha', 'Uma senha e a confirmação para a senha precisam ser informadas.')
+                messagebox.showerror('Falha', 'A senha e a confirmação para a senha precisam ser informadas.')
             elif acc_name == '' and acc_psswd != '' and acc_psswd_twin == '':
-                messagebox.showerror('Falha', 'Um nome de usuário e a confirmação para a senha precisam ser informados.')
+                messagebox.showerror('Falha', 'O nome de usuário e a confirmação para a senha precisam ser informados.')
             elif acc_name == '' and acc_psswd == '' and acc_psswd_twin != '':
-                messagebox.showerror('Falha', 'Um nome de usuário e senha precisam ser informados.')
+                messagebox.showerror('Falha', 'O nome de usuário e a senha precisam ser informados.')
             elif acc_name == '' and acc_psswd == '' and acc_psswd_twin == '':
                 messagebox.showerror('Falha', 'As credenciais de login precisam ser informadas.')
             else:
