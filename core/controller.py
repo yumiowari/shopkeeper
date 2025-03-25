@@ -1,5 +1,5 @@
-from core.mainModel import Model
-from core.mainView import View
+from core.model import Model
+from core.view import View
 
 from core.settings.controller import Controller as CtrlSettings
 
