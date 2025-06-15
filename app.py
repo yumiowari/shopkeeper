@@ -128,6 +128,19 @@ class Controller:
             
 
 def main():
+    if not os.path.exists('data/acc.pkl'):
+        print("Por favor, insira as credenciais de registro:")
+        acc_name = input("Nome de usuário: ")
+        password = input("Senha: ")
+
+        acc = {'name': acc_name, 'psswd': password}
+
+        if not os.path.exists('data'):
+            os.makedirs('data')
+
+        with open('data/acc.pkl', 'wb') as f:
+            pkl.dump(acc, f)
+
     controller = Controller()
 
 main()
