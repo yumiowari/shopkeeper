@@ -2,6 +2,7 @@ from core.model import Model
 from core.view import View
 
 from core.settings.controller import Controller as CtrlSettings
+from core.stock.controller import Controller as CtrlStock
 
 class Controller:
     def __init__(self):
@@ -16,4 +17,10 @@ class Controller:
     # inicia a janela de preferências
     def open_settings(self, root):
         self.__ctrlSettings = CtrlSettings(root)
+    #
+
+    # inicia a janela de estoque
+    def open_stock(self, root):
+        self.__ctrlStock = CtrlStock(root)
+    #
     #

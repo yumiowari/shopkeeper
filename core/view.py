@@ -27,6 +27,11 @@ class View:
 
         self.__menu.add_cascade(menu = self.__app_menu, label = 'App')
 
+        self.__inv_menu = tk.Menu(self.__menu, tearoff=0)
+        self.__inv_menu.add_command(label = 'Estoque', command = self.open_stock)
+
+        self.__menu.add_cascade(menu = self.__inv_menu, label = 'Inventário')
+
         self.root.configure(menu = self.__menu)
         #
 
@@ -49,6 +54,8 @@ class View:
 
             self.root.destroy()
     #
+
+    ### APP MENU ###
 
     # inicia a janela de preferências
     def open_settings(self):
@@ -107,3 +114,14 @@ class View:
     def open_link(self, url):
         webbrowser.open_new(url)
     #
+
+    ###
+
+    ### INV MENU ###
+
+    # inicia a janela de estoque
+    def open_stock(self):
+        self.__controller.open_stock(self.root)
+    #
+
+    ###
