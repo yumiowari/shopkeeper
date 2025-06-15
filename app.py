@@ -55,16 +55,16 @@ class View:
         
         self.__confirm_btn = tk.Button(self.__login, text = 'Confirmar', command = self.login)
 
-        self.courtesy.pack()
+        self.courtesy.pack(padx=10, pady=5)
 
         self.__acc_name_label.pack()
         self.__acc_name_entry.pack()
         self.__acc_psswd_label.pack()
         self.__acc_psswd_entry.pack()
 
-        self.__confirm_btn.pack()
+        self.__confirm_btn.pack(padx=10, pady=5)
 
-        self.__login.pack()
+        self.__login.pack(padx=10, pady=5)
         #
 
         # inicia a janela

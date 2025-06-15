@@ -37,14 +37,14 @@ class View:
 
         self.__confirm_btn = tk.Button(self.__set_acc, text = 'Confirmar', command = self.update_acc)
 
-        self.__acc_name_label.pack()
-        self.__acc_name_entry.pack()
-        self.__acc_psswd_label.pack()
-        self.__acc_psswd_entry.pack()
-        self.__acc_psswd_twin_label.pack()
-        self.__acc_psswd_twin_entry.pack()
+        self.__acc_name_label.pack(padx=10, pady=5)
+        self.__acc_name_entry.pack(padx=10)
+        self.__acc_psswd_label.pack(padx=10, pady=5)
+        self.__acc_psswd_entry.pack(padx=10)
+        self.__acc_psswd_twin_label.pack(padx=10, pady=5)
+        self.__acc_psswd_twin_entry.pack(padx=10)
 
-        self.__confirm_btn.pack()
+        self.__confirm_btn.pack(padx=10, pady=5)
         #
 
         self.__notebook.add(self.__set_acc, text = 'Conta')

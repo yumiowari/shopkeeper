@@ -60,7 +60,6 @@ class View:
         root = tk.Toplevel(self.root)
 
         root.title("Créditos")
-        #root.minsize(200, 150)
         root.resizable(False, False)
 
         top = tk.Frame(root)
@@ -94,11 +93,11 @@ class View:
         text_by.bind('<Leave>', lambda e: text_by.config(cursor=''))
         #
         
-        label_img.pack()
-        text_by.pack()
+        label_img.pack(padx=10, pady=5)
+        text_by.pack(padx=10, pady=5)
 
         ok_btn = tk.Button(bot, text = 'OK', command = root.destroy)
-        ok_btn.pack()
+        ok_btn.pack(padx=10, pady=5)
 
         top.pack(side = tk.TOP)
         bot.pack(side = tk.BOTTOM)
